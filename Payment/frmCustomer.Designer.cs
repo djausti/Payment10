@@ -1,6 +1,6 @@
 namespace Payment
 {
-    partial class Form1
+    partial class frmCustomer
     {
         /// <summary>
         /// Required designer variable.
@@ -40,49 +40,58 @@ namespace Payment
             // btnExit
             // 
             this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnExit.Location = new System.Drawing.Point(252, 181);
+            this.btnExit.Location = new System.Drawing.Point(378, 278);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(75, 23);
+            this.btnExit.Size = new System.Drawing.Size(112, 35);
             this.btnExit.TabIndex = 21;
             this.btnExit.Text = "E&xit";
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(164, 181);
+            this.btnSave.Location = new System.Drawing.Point(246, 278);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(75, 23);
+            this.btnSave.Size = new System.Drawing.Size(112, 35);
             this.btnSave.TabIndex = 20;
             this.btnSave.Text = "&Save";
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // lblPayment
             // 
             this.lblPayment.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblPayment.Location = new System.Drawing.Point(12, 77);
+            this.lblPayment.Location = new System.Drawing.Point(18, 118);
+            this.lblPayment.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPayment.Name = "lblPayment";
-            this.lblPayment.Size = new System.Drawing.Size(200, 80);
+            this.lblPayment.Size = new System.Drawing.Size(300, 123);
             this.lblPayment.TabIndex = 19;
             // 
             // btnSelectPayment
             // 
-            this.btnSelectPayment.Location = new System.Drawing.Point(228, 77);
+            this.btnSelectPayment.Location = new System.Drawing.Point(342, 118);
+            this.btnSelectPayment.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSelectPayment.Name = "btnSelectPayment";
-            this.btnSelectPayment.Size = new System.Drawing.Size(104, 23);
+            this.btnSelectPayment.Size = new System.Drawing.Size(156, 35);
             this.btnSelectPayment.TabIndex = 18;
             this.btnSelectPayment.Text = "Select Payment";
+            this.btnSelectPayment.Click += new System.EventHandler(this.btnSelectPayment_Click);
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(12, 53);
+            this.label2.Location = new System.Drawing.Point(18, 82);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(100, 23);
+            this.label2.Size = new System.Drawing.Size(150, 35);
             this.label2.TabIndex = 17;
             this.label2.Text = "Payment method:";
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(12, 13);
+            this.label1.Location = new System.Drawing.Point(18, 20);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 23);
+            this.label1.Size = new System.Drawing.Size(150, 35);
             this.label1.TabIndex = 16;
             this.label1.Text = "Customer name:";
             // 
@@ -90,17 +99,18 @@ namespace Payment
             // 
             this.cboNames.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboNames.FormattingEnabled = true;
-            this.cboNames.Location = new System.Drawing.Point(132, 13);
+            this.cboNames.Location = new System.Drawing.Point(198, 20);
+            this.cboNames.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cboNames.Name = "cboNames";
-            this.cboNames.Size = new System.Drawing.Size(200, 21);
+            this.cboNames.Size = new System.Drawing.Size(298, 28);
             this.cboNames.TabIndex = 15;
             // 
-            // Form1
+            // frmCustomer
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnExit;
-            this.ClientSize = new System.Drawing.Size(348, 218);
+            this.ClientSize = new System.Drawing.Size(522, 335);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.lblPayment);
@@ -108,9 +118,11 @@ namespace Payment
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cboNames);
-            this.Name = "Form1";
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Name = "frmCustomer";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Customer";
+            this.Load += new System.EventHandler(this.frmCustomer_Load);
             this.ResumeLayout(false);
 
         }
